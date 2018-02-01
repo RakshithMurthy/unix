@@ -4,17 +4,9 @@
 NAME
      1)  head - output the first part of files
 
-SYNOPSIS
-       head [OPTION]... [FILE]...
 
 DESCRIPTION
-       Print  the  first  10  lines  of each FILE to standard output.  With more than one FILE, precede each with a header giving the file
-       name.
-
-       With no FILE, or when FILE is -, read standard input.
-
-       Mandatory arguments to long options are mandatory for short options too.
-
+    
        -c, --bytes=[-]NUM
               print the first NUM bytes of each file; with the leading '-', print all but the last NUM bytes of each file
 
@@ -39,16 +31,9 @@ DESCRIPTION
 NAME
       2) tail - output the last part of files
 
-SYNOPSIS
-       tail [OPTION]... [FILE]...
 
 DESCRIPTION
-       Print the last 10 lines of each FILE to standard output.  With more than one FILE, precede each with a header giving the file name.
-
-       With no FILE, or when FILE is -, read standard input.
-
-       Mandatory arguments to long options are mandatory for short options too.
-
+     
        -c, --bytes=[+]NUM
               output the last NUM bytes; or use -c +NUM to output starting with byte NUM of each file
 
@@ -88,18 +73,9 @@ DESCRIPTION
 NAME
     3)   sort - sort lines of text files
 
-SYNOPSIS
-       sort [OPTION]... [FILE]...
-       sort [OPTION]... --files0-from=F
-
 DESCRIPTION
-       Write sorted concatenation of all FILE(s) to standard output.
-
-       With no FILE, or when FILE is -, read standard input.
-
-       Mandatory arguments to long options are mandatory for short options too.  Ordering options:
-
-       -b, --ignore-leading-blanks
+     
+     -b, --ignore-leading-blanks
               ignore leading blanks
 
        -d, --dictionary-order
@@ -140,17 +116,9 @@ DESCRIPTION
 NAME
       4) uniq - report or omit repeated lines
 
-SYNOPSIS
-       uniq [OPTION]... [INPUT [OUTPUT]]
-
 DESCRIPTION
-       Filter adjacent matching lines from INPUT (or standard input), writing to OUTPUT (or standard output).
-
-       With no options, matching lines are merged to the first occurrence.
-
-       Mandatory arguments to long options are mandatory for short options too.
-
-       -c, --count
+    
+     -c, --count
               prefix lines by the number of occurrences
 
        -d, --repeated
@@ -190,20 +158,10 @@ DESCRIPTION
 NAME
      5)  wc - print newline, word, and byte counts for each file
 
-SYNOPSIS
-       wc [OPTION]... [FILE]...
-       wc [OPTION]... --files0-from=F
 
 DESCRIPTION
-       Print  newline,  word,  and  byte  counts  for  each  FILE,  and  a  total  line  if  more than one FILE is specified.  A word is a
-       non-zero-length sequence of characters delimited by white space.
-
-       With no FILE, or when FILE is -, read standard input.
-
-       The options below may be used to select which counts are printed, always in the following order: newline,  word,  character,  byte,
-       maximum line length.
-
-       -c, --bytes
+       
+           -c, --bytes
               print the byte counts
 
        -m, --chars
@@ -225,5 +183,54 @@ DESCRIPTION
 
        --version
               output version information and exit
+              
+ NAME
+    6)   cut - remove sections from each line of files
+
+DESCRITION
+       -b, --bytes=LIST
+              select only these bytes
+
+       -c, --characters=LIST
+              select only these characters
+
+       -d, --delimiter=DELIM
+              use DELIM instead of TAB for field delimiter
+
+       -f, --fields=LIST
+              select only these fields;  also print any line that contains no delimiter character, unless the -s option is specified
+
+       -n     (ignored)
+
+       --complement
+              complement the set of selected bytes, characters or fields
+
+       -s, --only-delimited
+              do not print lines not containing delimiters
+  --help display this help and exit
+
+       --version
+              output version information and exit
+
+NAME
+       paste - merge lines of files
+
+DESCRIPTION
+      
+      -d, --delimiters=LIST
+              reuse characters from LIST instead of TABs
+
+       -s, --serial
+              paste one file at a time instead of in parallel
+
+       -z, --zero-terminated
+              line delimiter is NUL, not newline
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
+
 
 
