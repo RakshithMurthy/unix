@@ -1,13 +1,13 @@
+
+                                           IMPORTANT UNIX COMMANDS(31/1/18)
+
 NAME
      1)  who - show who is logged on
 
-SYNOPSIS
-       who [OPTION]... [ FILE | ARG1 ARG2 ]
 
 DESCRIPTION
-       Print information about users who are currently logged in.
-
-       -a, --all
+      
+      -a, --all
               same as -b -d --login -p -r -t -T -u
 
        -b, --boot
@@ -50,15 +50,7 @@ DESCRIPTION
 
        -u, --users
               list users logged in
-
-       --message
-              same as -T
-
-       --writable
-              same as -T
-
-       --help display this help and exit
-
+   
        --version
               output version information and exit
 
@@ -67,14 +59,8 @@ DESCRIPTION
 NAME
     2)   ls - list directory contents
 
-SYNOPSIS
-       ls [OPTION]... [FILE]...
-
 DESCRIPTION
-       List information about the FILEs (the current directory by default).  Sort entries alphabetically if none of -cftuvSUX nor --sort is specified.
-
-       Mandatory arguments to long options are mandatory for short options too.
-
+     
        -a, --all
               do not ignore entries starting with .
 
@@ -138,15 +124,7 @@ DESCRIPTION
 
        -H, --dereference-command-line
               follow symbolic links listed on the command line
-
-       --dereference-command-line-symlink-to-dir
-              follow each command line symbolic link
-
-              that points to a directory
-
-       --hide=PATTERN
-              do not list implied entries matching shell PATTERN (overridden by -a or -A)
- 
+   
  -R, --recursive
               list subdirectories recursively
 
@@ -192,9 +170,6 @@ NAME
 
 DESCRIPTION
      
-The cal utility displays a simple calendar in traditional format and ncal offers an alternative layout, more options and the date of Easter.  The new format
-     is a little cramped but it makes a year fit on a 25x80 terminal.  If arguments are not specified, the current month is displayed.
-
      The options are as follows:
 
      -h      Turns off highlighting of today.
@@ -226,18 +201,8 @@ The cal utility displays a simple calendar in traditional format and ncal offers
 NAME
      4)  bc - An arbitrary precision calculator language
 
-SYNTAX
-       bc [ -hlwsqv ] [long-options] [  file ... ]
-
 DESCRIPTION
-       bc  is  a  language  that supports arbitrary precision numbers with interactive execution of statements.  There are some similarities in the syntax to the C
-       programming language.  A standard math library is available by command line option.  If requested, the math library is defined before processing any  files.
-       bc  starts  by  processing  code  from all the files listed on the command line in the order listed.  After all files have been processed, bc reads from the
-       standard input.  All code is executed as it is read.  (If a file contains a command to halt the processor, bc will never read from the standard input.)
-
-       This version of bc contains several extensions beyond traditional bc implementations and the POSIX draft standard.  Command line  options  can  cause  these
-       extensions to print a warning or to be rejected.  This document describes the language accepted by this processor.  Extensions will be identified as such.
-
+     
    OPTIONS
        -h, --help
               Print the usage and exit.
@@ -264,15 +229,7 @@ DESCRIPTION
 NAME
      5)  date - print or set the system date and time
 
-SYNOPSIS
-       date [OPTION]... [+FORMAT]
-       date [-u|--utc|--universal] [MMDDhhmm[[CC]YY][.ss]]
-
 DESCRIPTION
-       Display the current time in the given FORMAT, or set the system date.
-
-       Mandatory arguments to long options are mandatory for short options too.
-
        -d, --date=STRING
               display time described by STRING, not 'now'
 
@@ -310,20 +267,9 @@ NAME
 
 
 DESCRIPTION
-       time run the program COMMAND with any given arguments ARG....  When COMMAND finishes, time displays information about resources used by COMMAND (on the
-       standard error output, by default).  If COMMAND exits with non-zero status, time displays a warning message and the exit status.
-
-       time determines which information to display about the resources used by the COMMAND from the string FORMAT.  If no format is specified on the command line,
-       but the TIME environment variable is set, its value is used as the format.  Otherwise, a default format built into time is used.
-
-       Options to time must appear on the command line before COMMAND.  Anything on the command line after COMMAND is passed as arguments to COMMAND.
-
-OPTIONS
+OPTIONS:
        -o FILE, --output=FILE
-              Write the resource use statistics to FILE instead of to the standard error stream.  By default, this overwrites the file, destroying the file's
-              previous contents.  This option is useful for collecting information on interactive programs and programs that produce output on the standard error
-              stream.
-
+  
        -a, --append
               Append the resource use information to the output file instead of overwriting it.  This option is only useful with the `-o' or `--output' option.
 
@@ -351,9 +297,6 @@ OPTIONS
 
 NAME
       7) uname - print system information
-
-SYNOPSIS
-       uname [OPTION]...
 
 DESCRIPTION
        Print certain system information.  With no OPTION, same as -s.
