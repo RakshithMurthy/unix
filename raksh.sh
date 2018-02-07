@@ -1,0 +1,6 @@
+now="(date)"
+now=$ date +"%m -%d -%y"
+echo "the date $now"
+now="(time)"
+now=$ date +"%T"
+echo "the time is $now"
