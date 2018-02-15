@@ -1,4 +1,4 @@
-o -n "Enter a number: "
+echo -n "Enter a number: "
 read num
 i=2
 
