@@ -31,9 +31,12 @@ chotu|110|waiter2|9000|1000111015
 sam|140|manager|15000|8874596213
 
    2) display the details whose name is 1/2?
-   cs2016a214@user:~/emp$ sed -n '2,3p' emp.lst
+   
+cs2016a214@user:~/emp$ grep -e "abhi" -e "raks" emp.lst
 abhi|100|waiter|10000|9669696905
-chotu|110|waiter2|9000|1000111015
+cs2016a214@user:~/emp$ grep -e "abhi" -e "sam" emp.lst
+abhi|100|waiter|10000|9669696905
+sam|140|manager|15000|8874596213
 
  3) employee names whose salary's start frm 9..?
  cs2016a214@user:~/emp$ sed -n 'p' emp.lst|grep -i "9000"
