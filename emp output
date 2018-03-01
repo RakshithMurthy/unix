@@ -1,0 +1,24 @@
+
+                                              OUTPUT FOR EMP.LST
+
+
+cs2016a214@user:~/emp$ sed -n '1,2p' emp.lst
+employee name|registration num|designation|salary|phone no
+abhi|100|waiter|10000|9669696905
+cs2016a214@user:~/emp$ sed -n '$p' emp.lst
+manoj|190|rider|9000|7745845412
+cs2016a214@user:~/emp$ sed -n '/cook/p' emp.lst
+shreyas|130|cook|9000|9876541235
+cs2016a214@user:~/emp$ sed -n '1,8p' emp.lst
+employee name|registration num|designation|salary|phone no
+abhi|100|waiter|10000|9669696905
+chotu|110|waiter2|9000|1000111015
+shaik|120|driver|10000|8887459623
+shreyas|130|cook|9000|9876541235
+sam|140|manager|15000|8874596213
+nids|150|personal ass|12000|7458454125
+lavisha|160|singer|12000|8547125965
+cs2016a214@user:~/emp$ sed -n '/manager/p' emp.lst
+sam|140|manager|15000|8874596213
+cs2016a214@user:~/emp$ sed -n '/waiter2/p' emp.lst
+chotu|110|waiter2|9000|1000111015
