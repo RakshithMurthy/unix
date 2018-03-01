@@ -1,5 +1,6 @@
 
                                               OUTPUT FOR EMP.LST
+                                              SED FUNCTIONS
 
 
 cs2016a214@user:~/emp$ sed -n '1,2p' emp.lst
