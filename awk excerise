@@ -1,0 +1,17 @@
+123|raks|accountant|1988
+124|raksh|sales|1999
+125|raksi|manager|1995
+126|rakshi|assi stant|2001
+127|rak|director |1997^Z
+
+
+1] write awk command to delete all blank spaces or lines from a file.
+sed '/^\s*$/d' emp.lst
+
+
+2]write a awk command to print the last field without knowing the no. of fields in the ,ine.
+awk -F "|" '{print $NF}' emp.lst
+
+
+3]print only the odd no.of lines of life
+awk 'NR%2==1' emp.lst
