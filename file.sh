@@ -61,3 +61,4 @@ Copy()
 																																																	              2) Remove ;;
 																																																		              3) Rename ;;
 																																																			              4) Compare ;;
+																																																				          5) difference ;;
