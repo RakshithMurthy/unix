@@ -1,0 +1,36 @@
+PROGRAM
+-------
+
+names='Adam Ben Carl Dom'
+PS3='Select names: '
+select name in $names
+do
+    if [ $name == dom ]
+      then
+        break
+    fi
+    echo "hello $name"
+done
+
+OUTPUT
+------
+
+1) Adam
+2) Ben
+3) Carl
+4) Dom
+Select names: 1
+hello Adam
+Select names: 2
+hello Ben
+Select names: 3
+hello Carl
+Select names: 4
+                                 DIALOG COMMANDS
+				 ----------------
+
+$ dialog --title "hello" --msgbox "Hi" 10 20
+$ dialog --title "Hello" --yesno "happy" 10 20
+$ dialog --title "Hello" --infobox "happy" 10 20;sleep 6
+$ dialog --title "Hello" --menu "Enter the option" 10 20 3 1 red, 2 green, 3 blue
+$ dialog --title "Hello" --checklist "tick the list" 10 20 3 1 red on, 2 green off, 3 blue on
