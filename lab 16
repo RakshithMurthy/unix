@@ -1,0 +1,24 @@
+Write a shell script for backing up directory automatically at a given interval
+
+echo "Do you want to create a full backup (Y=Yes, N=No) : \c"
+ read INPUT
+
+ day=$(date +%A)
+ time=$(date +%m-%d-%y)
+ filename=user2backup$time.tar.gz
+ srcdir='/export/home/student/user2'
+ desdir='/export/home/student/backupfolder'
+
+ case $INPUT in
+ N) echo "Bye." ;;
+ Y)
+ if [ "$day" = "Friday" ]
+ then 
+ tar -cpzf $desdir/$filename $srcdir
+
+ else
+ echo "A full backup is done on Fridays only!!!"
+
+ fi ;;
+ *) echo "Error" ;;
+ esac
